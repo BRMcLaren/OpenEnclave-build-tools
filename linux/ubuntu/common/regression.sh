@@ -1,3 +1,4 @@
+cd ~/
 git clone https://github.com/intel/linux-sgx.git
 cd linux-sgx
 ./download_prebuilt.sh
