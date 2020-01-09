@@ -1,2 +1,2 @@
 sudo apt-get update
-sudo apt-get install libssl-dev libcurl4-openssl-dev protobuf-compiler libprotobuf-dev debhelper cmake dkms unzip zip build-essential ocaml automake autoconf libtool wget python libssl-dev ocaml-build -y
+sudo apt-get install libssl-dev libcurl4-openssl-dev protobuf-compiler libprotobuf-dev debhelper cmake dkms unzip zip build-essential ocaml automake autoconf libtool wget python libssl-dev ocamlbuild -y

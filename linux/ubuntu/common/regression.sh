@@ -27,12 +27,6 @@ sudo dpkg -i installer/linux/deb/libsgx-dcap-ql_*-*_amd64.deb
 sudo dpkg -i installer/linux/deb/libsgx-dcap-ql-dev_*-*_amd64.deb
 
 cd ~/
-git clone https://github.com/intel/linux-sgx-driver.git
-cd linux-sgx-driver && make
-sudo dkms add -m sgx -v 1.21
-
-
-
 git clone https://github.com/openenclave/openenclave.git
 sudo openenclave/scripts/ansible/install-ansible.sh
 sudo ansible-playbook openenclave/scripts/ansible/oe-vanilla-prelibsgx-setup.yml
