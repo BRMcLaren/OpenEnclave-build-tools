@@ -29,7 +29,8 @@ sudo dpkg -i installer/linux/deb/libsgx-dcap-ql-dev_*-*_amd64.deb
 
 cd ~/
 git clone https://github.com/openenclave/openenclave.git
-sudo openenclave/scripts/ansible/install-ansible.sh
-sudo ansible-playbook openenclave/scripts/ansible/oe-vanilla-prelibsgx-setup.yml
+cd openenclave
+sudo scripts/ansible/install-ansible.sh
+sudo ansible-playbook scripts/ansible/oe-vanilla-prelibsgx-setup.yml
 
 mkdir build && cd build && cmake -G "Unix Makefiles" .. && make && ctest
